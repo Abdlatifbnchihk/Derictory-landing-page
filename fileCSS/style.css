@@ -171,6 +171,13 @@ ul {
     text-transform: uppercase;
     z-index: 1000;
 }
+.welcome__hero__text {
+    animation-name: transtotop;
+    animation-duration: 1s;
+}
+@keyframes transtotop {
+    from{transform: translateY(-60%);}
+}
 /* .content__text__welcome__hero .container . */
 .welcome__hero__text p {
     color: var(--secondry--color);
@@ -187,6 +194,11 @@ ul {
 .welcome__here .welcome__hero__search__box .welcome__hero__form {
     display: flex;
     margin-right: 1.5rem;
+    animation-name: transleft;
+    animation-duration: 1s;
+}
+@keyframes transleft {
+    from{transform: translateX(-30%);}
 }
 .welcome__here .welcome__hero__search__box .welcome__hero__form .sengel__welcome__hero__form:first-child {
     display: flex;
@@ -243,9 +255,14 @@ ul {
     font-size: 15px;
     transition: 0.3s ease;
     opacity: 1;
+    animation-name: transright;
+    animation-duration: 1s;
 }
 .welcome__here .welcome__hero__search__box .welcome__hero__search .welcome__here__btn:hover {
     opacity: 0.8;
+}
+@keyframes transright {
+    from{transform: translateX(30%);}
 }
 .welcome__here .welcome__hero__search__box .welcome__hero__search .welcome__here__btn i {
     font-size: 15px;
